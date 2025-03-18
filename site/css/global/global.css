@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  scroll-behavior: smooth;
+}
+/*body tem margin por padrão*/
+body{
+	margin: 0px;
+}
+
+.container{
+	width: 1160px;
+	/*background-color: #E94B4E;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-form{
+	width: 100%;
+	/*background: #4F92E3;*/
+	display: flex;
+	justify-content: center;
+}
+
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+/*ul por padrão tem margin e padding*/
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+/*O h1 possui uma margem por padrão para cima e baixo, quando não tenho um elemento antes a margem vaza, vaza o container */
+h1{
+	margin: 0px;
+	padding: 40px;
+	
+}
+
+h2{
+	margin: 0px;
+}
+

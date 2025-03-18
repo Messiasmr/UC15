@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+#vantagens{
+	/* Para centralizar o que que estiver dentro do quem somos*/
+	display: flex;
+	justify-content: center;
+	margin-top: 2px;
+	background-color:#F8F0F1;
+	border-bottom:solid 2px #E5DCDC;
+	
+}
+
+.vantagens_options{
+	/*background-color: green;*/
+	height: 118px;
+	display:flex;
+	
+}
+
+.va1,
+.va2,
+.va3{		
+	width: 386px;
+	
+	
+}
+
+
+
+.va_icon{
+	/*background: #00ADF5;*/
+	display: flex;
+	justify-content: center;
+	padding: 30px 0px 3px 0px;
+	
+}
+
+.va_desc{	
+	/*background: #107C59;*/
+	display: flex;
+	justify-content: center;
+	padding: 3px 0px 30px 0px;
+}
+
+
+@media (max-width:910px){
+	#vantagens{
+		display: flex;
+		overflow-x: auto;
+		justify-content: center;
+		
+	}
+	
+	.vantagens_options{
+	
+	margin-left: 390px;
+	
+	
+	}
+	
+	#vantagens::-webkit-scrollbar {
+  display: none;
+}
+}
+
+@media (max-width:320px){
+.vantagens_options{
+	/*background-color: green;*/
+	height: 118px;
+	display:flex;
+	margin-left: 390px;
+	
+	}
+}

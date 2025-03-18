@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#introducao{
+	background-image:url("/img/slider.jpg");
+	display: flex;
+	justify-content: center;
+	background-position: center;
+	/*Para monitores maiores a imagem vai expandir e para celulares diminuir!*/
+	background-size: cover;
+	/*Se não tiver nada escrito no html precisamos definir a altura para conseguir ver a imagem*/
+	height: 600px;
+	}
+
+
+.introducao-texto h1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+
+@media (max-width:690px){
+		
+	#introducao{
+		height: 300px;
+		
+	}
+	
+	.introducao-texto h1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 46px;
+}
+	
+}
+
+@media (max-width:415px){
+	.introducao-texto h1{
+		font-size:41px;
+		}
+}
+

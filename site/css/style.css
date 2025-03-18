@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Global*/
+@import "./global/global.css";
+@import "./global/header.css";
+
+/* Utilidades */
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+/* Introdução */
+@import "./introducao/introducao.css";
+
+/* Quem Somos */
+@import "./quemsomos/quemsomos.css";
+
+/* Vantagens */
+@import "./vantagens/vantagens.css";
+
+/* Produtos */
+@import "./produtos/produtos.css";
+
+/* Parceiros */
+@import "./parceiros/parceiros.css";
+
+/* Contato */
+@import "./contatos/contatos.css";
+@import "./contatos/form.css";
+
+
+/* Footer */
+@import "./footer/footer.css";

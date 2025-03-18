@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+#quemsomos{
+	/* Para centralizar o que que estiver dentro do quem somos*/
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	/*background:#2241CD;*/
+}
+
+.quemsomos_options{
+	/*background-color: green;*/
+	height: 320px;
+	/*display:flex;
+	flex-wrap: wrap;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.op1,
+.op2{		
+	padding: 40px;
+}
+
+.op1{
+	background-color:#E6AE66;
+	border-radius: 4px 0px 0px 4px;
+	
+}
+
+.op2{
+	background-color:#E8A085;
+	border-radius: 0px 4px 4px 0px;
+}
+
+
+.op_title{
+	/*background: #00ADF5;*/
+	padding: 20px 20px 10px 20px;
+}
+
+.op_desc{
+	/*background: #107C59;*/
+	padding: 10px 20px 20px 20px;
+	line-height: 28px;
+}
+
+
+.quemsomos_options a{
+	border: 2px solid #FFFFFF;
+	padding: 10px;
+	border-radius: 4px;
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+}
+
+@media (max-width:768px){
+	.quemsomos_options{
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 170px;
+}
+
+.op1{
+	background-color:#E6AE66;
+	border-radius: 4px 4px 0px 0px;
+	
+}
+
+.op2{
+	background-color:#E8A085;
+	border-radius: 0px 0px 4px 4px;
+}
+
+}
+
+@media (max-width:414px){
+	.quemsomos_options{
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 14px;
+	margin-bottom: 260px;
+}
+
+}
+@media (max-width:400px){
+	.quemsomos_options{
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 14px;
+	margin-bottom: 260px;
+}
+
+}
+
+@media (max-width:390px){
+	.quemsomos_options{
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 14px;
+	margin-bottom: 280px;
+}
+
+}
+@media (max-width:376px){
+	.quemsomos_options{
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 14px;
+	margin-bottom: 290px;
+}
+}
+
+@media (max-width:320px){
+	.quemsomos_options{
+	/*background-color: green;*/
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 14px;
+	margin-bottom: 290px;
+}
+	
+	.op_title{
+	/*background: #00ADF5;*/
+	padding: 5px 10px 5px 10px;
+	font-size: 16px;
+}
+
+.op_desc{
+	/*background: #107C59;*/
+	padding: 5px 10px 20px 10px;
+	line-height: 28px;
+}
+
+}

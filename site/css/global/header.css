@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.header{
+	/*Para o menu ficar ao lado do logo:*/
+	display: flex;
+	justify-content: space-between;
+	/*Para alinhar o menu ao centro com o logo*/
+	align-items: center;
+	/* padding 40px para cima e baixo e 20px para um lado e outro*/
+	padding: 40px 20px;
+	/*ao invés de deixar o tamanho crescer infinitamente em monitores maiores, definir um width máximo*/
+	max-width: 1160px;
+	/*alinhar ao centro com item de bloco que tem alinhamento é o margem auto left e right e para cima e para baixo de 0, com isso alinha o logo e o menu, conteúdos que estão dentro do header, então usar sempre max-width para crescer até o tamanho que eu quero e margin auto*/
+	margin: 0 auto;
+	
+	
+}
+
+
+.header-menu{
+	display: flex;
+	gap: 40px;
+	flex-wrap: wrap;
+	justify-content: center; /*Para o responsivo*/
+}
+
+.header-menu a:hover{
+	text-decoration:underline;
+	text-decoration-color:#A88213;
+	text-decoration-style: double;
+}
+
+
+
+
+
+@media (max-width:690px){
+		
+	.header {
+      display: flex;
+	  flex-direction: column;
+	  gap: 40px;
+	  /*padding: 20px;*/
+  }
+
+	.header a{
+		background:#F9EAEA;
+		border-radius: 6px;
+		padding: 10px 20px 10px 20px;
+		
+	}
+	
+	.fd-logo a{
+		background:#ffffff;
+		
+	}
+	
+}
+
+@media (max-width:360px){
+
+		
+	.header {
+      display: flex;
+	  flex-direction: column;
+	  gap: 20px;
+	
+  }
+	
+	.header-menu{
+		gap:20px;
+	}
+
+	.header a{
+		background:#F9EAEA;
+		border-radius: 6px;
+		font-size: 16px;
+		padding: 5px 10px 5px 10px;
+		
+	}
+	
+	.fd-logo a{
+		background:#ffffff;
+		
+	}
+	
+}
+

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Tamanhos*/
+
+.fonte-16{
+	font-size: 16px;
+}
+
+.fonte-18{
+	font-size: 18px;
+}
+
+.fonte-24{
+	font-size: 24px;
+}
+
+.font-52{
+	font-size: 48px;
+}
+
+
+/* Tipo e Peso*/
+.fonte-p400{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+
+.fonte-p600{
+	font-family: "Poppins";
+  	font-weight: 600;
+}
+
+
+.fonte-c{
+	font-family: 'Caveat Brush', cursive;
+	font-weight: 400;
+}
+
+
+/*bold*/
+.bold{
+	font-weight: bold;
+}

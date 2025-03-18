@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+#contato{
+	background: linear-gradient(#000000 600px, #ffffff 0px);
+}
+*/
+.contato{
+	width: 1160px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/*5fr 7fr;*/
+	/*background-color: #329C3E;*/
+}
+
+
+.contato-formulario{
+	/*padding: 60px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	margin-bottom: 50px;*/
+	background: #2D37E8;
+}
+
+.contato-dados{
+	background:#E8F8F8;
+	border-radius: 5px 0 0 5px;
+	padding: 60px;
+}
+
+.contato-formulario{
+	background:#F7F1DF;
+	border-radius: 0 5px 5px 0;
+	padding: 60px;
+}
+
+.contato-dados h2{
+	margin-bottom: 40px;
+}
+
+.contato-endereco{
+	
+	background:url("../../img/icones/local.svg") no-repeat 0px 2px;
+	padding-left: 28px;
+}
+
+.contato-endereco{
+	margin-bottom: 8px;
+	
+}
+
+.contato-meios a{
+	display: block;
+	max-width: max-content;
+	/*Para forçar eles ocuparem só o espaço de conteúdo deles, se não o usuário pode clicar ao lado e errar, usar o background para mostrar aos alunos e desabilitar o max como exemplo para mostar e não foi definido como display inline-block se não ele fica na mesma linha quando couber
+	background:#C41F22;*/
+	margin-bottom: 8px;
+	padding-left: 28px;
+	
+}
+
+.contato-meios a:hover{
+	color:#8C8081;
+}
+
+.email{
+	background: url(../../img/icones/email.svg) no-repeat;
+	padding-left: 28px;
+	margin-top: 32px;
+}
+
+.fone{
+	background:url(../../img/icones/telefone.svg) no-repeat;
+	padding-left: 28px;
+	margin-top: 32px;
+	
+}
+
+
+
+.contato-redes{
+	display: flex;
+	gap:32px;
+	padding-left: 28px;
+	margin-top: 40px;
+}
+
+
+@media (max-width: 600px){
+	.contato{
+		grid-template-columns: 1fr;
+	}
+	
+	.contato-dados,
+	.contato-formulario{
+		padding: 20px;
+	}
+	
+	.contato-dados{
+		border-radius: 5px 5px 0 0;
+		margin-bottom: 0px;
+	}
+	
+	.contato-formulario{
+		border-radius: 0 0 5px 5px;
+	}
+	
+	.contato-dados h2{
+		margin-bottom: 32px;
+	}
+	
+	
+	
+}
+
+@media (max-width: 414px){
+	.contato{
+		grid-template-columns: 1fr;
+	}
+	
+	.contato-dados,
+	.contato-formulario{
+		padding: 50px;
+	}
+	
+	.contato-dados{
+		border-radius: 5px 5px 0 0;
+		margin-bottom: 5px;
+	}
+	
+	.contato-formulario{
+		border-radius: 0 0 5px 5px;
+	}
+	
+	.contato-dados h2{
+		margin-bottom: 32px;
+	}
+	
+	
+	
+}

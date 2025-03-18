@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Marrom*/
+.cor-laranja{
+	color:#D98E00;
+}
+
+.cor-branco{
+	color: #ffffff;
+}
+
+.sombra{
+	text-shadow: 2px 2px 0px #644c42;
+}
+
+.cor-grafite{
+	color:#6E6C6C;
+}
+ 

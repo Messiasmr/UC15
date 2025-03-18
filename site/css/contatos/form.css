@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.form{
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+
+
+
+.form label{
+	/*para deixar certinho um em baixo do outro*/
+	display: block;
+	font: 500 14px "Poppins", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	margin-bottom: 4px;
+	
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea{
+	font: 400 14px "Poppins", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	background: #EFEDED;
+	border: 1px solid #B59B0E;
+	padding: 12px;
+	border-radius: 4px;
+	/*O imput por padrão não expande 100%, então, colocar para 100%, cuidado ao colocar ele soma com o padding, resolvemos com box-sizing: border box*/
+	
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+
+/*Mudando o estilo de focus*/
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus{
+	outline: none;
+	border-color: #847803;
+	background: #ffffff;
+	box-shadow: 0 0 0 1px #cccccc;
+}
+
+/*Para expandir a caixa que eu quiser de ponta a ponta*/
+.form .col-2{
+	grid-column: span 2;
+}
+
+.botao{
+	font: 400 14px "Poppins", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	background: #EFEDED;
+	border: 1px solid #B59B0E;
+	padding: 12px;
+	border-radius: 4px;
+}
+
+.botao:hover{
+	background:#F0AB3A;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/*Para não deixar aumentar a caixa do textarea*/
+textarea{
+	resize: none;
+}
+
+@media (max-width: 600px){
+	.form {
+		grid-template-columns: 1fr;
+		/*ainda tenho um elemento forçando duas colunas, o grid span 2, então informar o form col 2  */
+	}
+	
+	.form .col-2{
+		grid-column: 1;
+	}
+}
+
